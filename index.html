@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Generator | Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <div class="canvas-container">
+            <h2>Site Layout: 200m x 140m</h2>
+            <canvas id="siteCanvas" width="800" height="560"></canvas>
+            <p class="legend">
+                <span class="box a"></span> Tower A (30x20m)
+                <span class="box b"></span> Tower B (20x20m)
+                <span class="box p"></span> Plaza (40x40m)
+            </p>
+        </div>
+
+        <div class="sidebar">
+            <h3>Layout Statistics</h3>
+            <div id="stats">
+                <div class="stat-row">Tower A: <span id="countA">0</span></div>
+                <div class="stat-row">Tower B: <span id="countB">0</span></div>
+                <div class="stat-row">Total Area: <span id="totalArea">0</span>m²</div>
+
+                <hr>
+
+                <h4>Compliance Check [cite: 25]</h4>
+                <div class="rule-item">Inside Site (10m setback): <span id="rule1" class="status">●</span></div>
+                <div class="rule-item">15m Separation: <span id="rule2" class="status">●</span></div>
+                <div class="rule-item">Plaza Clearance: <span id="rule3" class="status">●</span></div>
+                <div class="rule-item">Neighbor Mix (60m): <span id="rule4" class="status">●</span></div>
+            </div>
+            <button id="generateBtn">Generate New Layout</button>
+        </div>
+    </div>
+
+    <script src="Generator.js"></script>
+</body>
+</html>

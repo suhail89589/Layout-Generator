@@ -1,0 +1,98 @@
+:root {
+  --primary: #2563eb;
+  --bg: #f1f5f9;
+  --text: #0f172a;
+  --success: #16a34a;
+  --error: #dc2626;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 40px;
+}
+
+.dashboard {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.sidebar {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stat-row,
+.rule-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.pass {
+  color: var(--success);
+}
+
+.fail {
+  color: var(--error);
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+
+}
+
+.legend {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+.box {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.a {
+  background: #2563eb;
+}
+
+.b {
+  background: #16a34a;
+}
+
+.p {
+  background: #e2e8f0;
+  border: 1px solid #94a3b8;
+}
